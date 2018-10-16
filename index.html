@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!-- created using Industrious CSS:  https://templated.co/industrious -->
+
+<html>
+<script>
+    function tReplace() {
+        var tInput = document.getElementById("textBox").value;
+
+        // replace all lowercase ts
+        var lowercaseT = tInput.replace(/t/g, "&#647");
+        // replace all uppercase Ts
+        var uppercaseT = lowercaseT.replace(/T/g, "&#9524");
+
+        document.getElementById("output").innerHTML = uppercaseT;
+    }
+
+/*
+    var input = document.getElementById("textBox");
+    input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.which == 13) {
+            alert("you done pressed the enter key my g")
+            document.getElementById("mybtn").click();
+        }
+    });
+    */
+</script>
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+<title>UMass Bos&#647on Official &#9524 Replacemen&#647 &#9524ool</title>
+
+<body>
+    <h2 align="center">UMass Bos&#647on Official &#647 Replacemen&#647 &#647ool</h2>
+
+    <p align="center">
+            In adherence wi&#647h &#647he new UMass Bos&#647on guidelines, all &#647-charac&#647ers 
+            mus&#647 be flipped upside-down. 
+    </p><p align="center">
+            &#9524o assis&#647 wi&#647h &#647his new rule, our R&D 
+            depar&#647men&#647 has developed &#647his cu&#647&#647ing edge &#647ool &#647o assis&#647 all members 
+            wi&#647h properly forma&#647&#647ing &#647his &#647ex&#647.
+    </p>
+
+    <p align="center">
+        Praised be Bobby Beacon's name.
+    </p>
+
+    <input type="text" id="textBox" align="center" value="Inpu&#647 your s&#647ing here" />
+    <p></p>
+    <div align="center">
+        <button id="mybtn" align="center" onclick="tReplace()">Conver&#647</button>
+    </div>
+
+    <p align="center"><b>Outpu&#647:</b></p>
+    <p align="center" id="output"></p>
+
+    <p align="center">&#169 Your mom 2018.  All rights reserved.</p>
+</body>
+</html>
